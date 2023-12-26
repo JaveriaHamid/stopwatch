@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e8e8e8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 23px 70px;
+    margin-bottom: 70px;
+}
+
+.numbers div {
+    font-size: 3em;
+    border-radius: 13px;
+    padding: 26px 33px;
+    color: #080708;
+    background-color: #FFFCE8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    cursor: pointer;
+}
+
+.buttons div {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.stop,
+.start,
+.reset {
+    padding: 5px 25px;
+    width: 6em;
+    height: 2em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #FFFCE8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+}
+
+.stop::before, .start::before, .reset::before{
+    content: '';
+    width: 0;
+    height: 2.2em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .6s ease;
+    display: block;
+    z-index: -1;
+} 
+
+.stop::before {
+    background-image: linear-gradient(to right, red 0%, yellow 100%);
+}
+
+.start::before {
+    background-image: linear-gradient(to right, #f9f047 0%, blue 100%);
+}
+
+.reset::before {
+    background-image: linear-gradient(to right, blue 0%, #080708 100%);
+}
+
+.stop:hover::before, .start:hover::before, .reset:hover::before{
+    width: 9em;
+}
