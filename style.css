@@ -62,12 +62,10 @@ body {
     width: 6em;
     height: 2em;
     border-radius: 30em;
-    font-size: 15px;
-    font-family: inherit;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background-color: #FFFCE8;
+    background-color: #ebeae0;
     box-shadow: 6px 6px 12px #c5c5c5,
         -6px -6px 12px #ffffff;
 }
