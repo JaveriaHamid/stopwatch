@@ -34,6 +34,8 @@ body {
 
 .numbers div {
     font-size: 3em;
+    min-width: 315px;
+    text-align: center;
     border-radius: 13px;
     padding: 26px 33px;
     color: #080708;
